@@ -26,6 +26,43 @@ h1 {
     color: #5a4d9a;
 }
 
+<<<<<<< HEAD
+#search-input {
+    width: 100%;
+    max-width: 335px;
+    padding: 10px 15px;
+    border: 1px solid #c1bff5;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f0eefd;
+    color: #5a4d9a;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+=======
+<<<<<<< HEAD
+.search-container {
+>>>>>>> d1559c9 (fetch API)
+    margin-bottom: 20px;
+}
+
+#search-input:focus,
+.todo-input:focus,
+.todo-form > button:focus,
+.edit-btn:focus,
+.delete-btn:focus,
+.edit-button:focus {
+    outline: 2px solid #7b6bd8;
+    outline-offset: 2px;
+}
+
+.todo-input {
+    width: 100%;
+<<<<<<< HEAD
+    max-width: 335px;
+=======
+    max-width: 335px;  
+=======
 #search-input {
     width: 100%;
     max-width: 335px;
@@ -54,6 +91,8 @@ h1 {
 .todo-input {
     width: 100%;
     max-width: 335px;
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
     padding: 10px 15px;
     border: 1px solid #c1bff5;
     border-radius: 4px;
@@ -83,15 +122,32 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 .todo-form > button:hover:not(:disabled) {
     background-color: #5a4d9a;
 }
 
+=======
+<<<<<<< HEAD
+.todo-form > button:hover {
+    background-color: #5a4d9a;
+}
+
+=======
+.todo-form > button:hover:not(:disabled) {
+    background-color: #5a4d9a;
+}
+
+>>>>>>> d1559c9 (fetch API)
 .todo-form > button:disabled {
     background-color: #b0aee0;
     cursor: not-allowed;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
 .todo-list {
     list-style-type: none;
     padding: 0;
@@ -103,6 +159,24 @@ h1 {
     color: #4a4a6a;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
+    justify-content: space-between;
+    gap: 8px;
+=======
+<<<<<<< HEAD
+>>>>>>> d1559c9 (fetch API)
+}
+
+.todo-item > input[type="checkbox"] {
+    margin-right: 12px;
+    cursor: pointer;
+<<<<<<< HEAD
+=======
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    margin-left: 8px;
+=======
     justify-content: space-between;
     gap: 8px;
 }
@@ -110,6 +184,7 @@ h1 {
 .todo-item > input[type="checkbox"] {
     margin-right: 12px;
     cursor: pointer;
+>>>>>>> d1559c9 (fetch API)
 }
 
 .todo-item > span {
@@ -123,10 +198,19 @@ h1 {
 
 .todo-item > span:hover {
     color: #c056d1;
+<<<<<<< HEAD
+=======
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
 }
 
 .edit-btn {
     background-color: #9a9aff;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d1559c9 (fetch API)
     border: none;
     color: white;
     border-radius: 4px;
@@ -134,6 +218,10 @@ h1 {
     padding: 5px 8px;
     transition: background-color 0.3s ease;
     margin-left: 8px;
+<<<<<<< HEAD
+=======
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
 }
 
 .edit-btn:hover {
@@ -142,6 +230,11 @@ h1 {
 
 .delete-btn {
     background-color: #e573ff;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d1559c9 (fetch API)
     border: none;
     color: white;
     border-radius: 4px;
@@ -149,12 +242,17 @@ h1 {
     padding: 5px 8px;
     transition: background-color 0.3s ease;
     margin-left: 8px;
+<<<<<<< HEAD
+=======
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
 }
 
 .delete-btn:hover {
     background-color: #c056d1;
 }
 
+<<<<<<< HEAD
 .edit-button {
     background-color: #9a9aff;
     border: none;
@@ -174,6 +272,33 @@ h1 {
     text-decoration: line-through;
     color: gray;
     transition: color 0.3s ease, text-decoration 0.3s ease;
+=======
+<<<<<<< HEAD
+.todo-completed {
+    text-decoration: line-through;
+    color: gray;
+=======
+.edit-button {
+    background-color: #9a9aff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.edit-button:hover {
+    background-color: #6b6bd8;
+}
+
+.todo-completed {
+    text-decoration: line-through;
+    color: gray;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
 }
 
 .todo-text {
@@ -181,6 +306,7 @@ h1 {
 }
 
 .edit-input {
+<<<<<<< HEAD
     padding: 6px 8px;
     font-size: 16px;
     border: 1px solid #c1bff5;
@@ -193,6 +319,25 @@ h1 {
     transition: all 0.3s ease;
     margin: 0 8px;
 }
+=======
+<<<<<<< HEAD
+    display: none;
+    margin: 0 8px;
+}
+=======
+    padding: 6px 8px;
+    font-size: 16px;
+    border: 1px solid #c1bff5;
+    border-radius: 4px;
+    background-color: #f0eefd;
+    color: #5a4d9a;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 335px;
+    transition: all 0.3s ease;
+    margin: 0 8px;
+}
+>>>>>>> d1559c9 (fetch API)
 
 .todo-counter {
     font-weight: 600;
@@ -221,4 +366,9 @@ h1 {
     .todo-form > button {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 79aa403 ( adding API fetch)
+>>>>>>> d1559c9 (fetch API)
