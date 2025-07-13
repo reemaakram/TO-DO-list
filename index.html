@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>My To do List</h1>
+
+        <!-- Search  -->
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search a task" 
+            class="search-input"
+        />
+<!-- input  -->
+        <form class="todo-form">
+            <input 
+                type="text" 
+                class="todo-input" 
+                placeholder="Enter what you want to add" 
+                required 
+            />
+            <button type="submit">Add</button>
+            <button id="clear-all-btn">Clear All</button>
+        </form>
+         <!-- count  -->
+        <p class="todo-counter">Total Tasks in the List: 0</p>
+
+        <ul class="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

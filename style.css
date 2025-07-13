@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e0f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    color: #4a4a6a;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: #f9f8ff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(102, 94, 159, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a4d9a;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 335px;
+    padding: 10px 15px;
+    border: 1px solid #c1bff5;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f0eefd;
+    color: #5a4d9a;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#search-input:focus,
+.todo-input:focus,
+.todo-form > button:focus,
+.edit-btn:focus,
+.delete-btn:focus,
+.edit-button:focus {
+    outline: 2px solid #7b6bd8;
+    outline-offset: 2px;
+}
+
+.todo-input {
+    width: 100%;
+    max-width: 335px;
+    padding: 10px 15px;
+    border: 1px solid #c1bff5;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f0eefd;
+    color: #5a4d9a;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.todo-form > button {
+    padding: 10px 15px;
+    background-color: #7b6bd8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-form > button:hover:not(:disabled) {
+    background-color: #5a4d9a;
+}
+
+.todo-form > button:disabled {
+    background-color: #b0aee0;
+    cursor: not-allowed;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    padding: 10px;
+    border-bottom: 1px solid #d6d3f0;
+    color: #4a4a6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.todo-item > input[type="checkbox"] {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.todo-item > span {
+    cursor: pointer;
+    color: #e573ff;
+    padding: 0 8px;
+    font-weight: bold;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.todo-item > span:hover {
+    color: #c056d1;
+}
+
+.edit-btn {
+    background-color: #9a9aff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.edit-btn:hover {
+    background-color: #6b6bd8;
+}
+
+.delete-btn {
+    background-color: #e573ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.delete-btn:hover {
+    background-color: #c056d1;
+}
+
+.edit-button {
+    background-color: #9a9aff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.edit-button:hover {
+    background-color: #6b6bd8;
+}
+
+.todo-completed {
+    text-decoration: line-through;
+    color: gray;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.todo-text {
+    margin: 0 8px;
+}
+
+.edit-input {
+    padding: 6px 8px;
+    font-size: 16px;
+    border: 1px solid #c1bff5;
+    border-radius: 4px;
+    background-color: #f0eefd;
+    color: #5a4d9a;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 335px;
+    transition: all 0.3s ease;
+    margin: 0 8px;
+}
+
+.todo-counter {
+    font-weight: 600;
+    color: #5a4d9a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 420px) {
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+        width: 90%;
+        max-width: none;
+    }
+
+    #search-input,
+    .todo-input {
+        max-width: 100%;
+    }
+
+    .todo-form {
+        flex-direction: column;
+    }
+
+    .todo-form > button {
+        width: 100%;
+    }
+}
